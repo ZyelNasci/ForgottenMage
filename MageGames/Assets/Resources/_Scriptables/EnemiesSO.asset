@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac6797c93af2e04f87d6434ced13327, type: 3}
+  m_Name: EnemiesSO
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemyName: Skeletony
+    enemyPrefab: {fileID: 2861551511852743156, guid: 04cc7e9769e2b0b4484eb88489425099, type: 3}
+    type: 0
+  - enemyName: SkeletonyAxe
+    enemyPrefab: {fileID: 4402801436718631152, guid: 14d96802dfdbe2b4eb723218c15f4695, type: 3}
+    type: 1
+  - enemyName: Red Skeleton Archer
+    enemyPrefab: {fileID: 2861551511852743156, guid: d1e563659e198864e8dc1418b1509e57, type: 3}
+    type: 2
+  - enemyName: SkeletonBoss
+    enemyPrefab: {fileID: 8935224417134544511, guid: cd48e436e9cee994dbb55a1dfaabc7db, type: 3}
+    type: 3

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Falling
+  - Obstacle
+  - Walkable
+  - Enemy
+  - Projectile
+  - Damagable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Walkable
+  - Enemy
+  - Obstacle
+  - OnlyObstacle
+  - Particle
+  - Interactable
+  - Damagable
+  - CheckObstacle
+  - Projectile
+  - SmallObstacle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 215520185
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Midleground
+    uniqueID: 3918248257
+    locked: 0
+  - name: Foreground
+    uniqueID: 1501504285
+    locked: 0
+  - name: UI
+    uniqueID: 2026891449
+    locked: 0

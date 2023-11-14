@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BookWallObject
+  m_Shader: {fileID: -6465566751694194690, guid: 6a3e10fa05fed1544960638418db6fde, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_42bce1bdaeb8489a9dd25427ce9574cb: 1
+    - Vector1_1: 0
+    - Vector1_2: 1
+    - Vector1_3: 10
+    - Vector1_4: 5
+    - Vector1_5: 0.9
+    - Vector1_582a461dcc444b5fac22765035c7f5b2: 32.36
+    - Vector1_6: 0.35
+    - Vector1_80d8646cfe684c358c32e04bcb0ac987: 0.9
+    - Vector1_8dd82ac67b384db0bc12feecc859c16e: -0.062
+    - Vector1_b7670bc3a9f74a9abf0c51ef5dd8c387: 2.44
+    - Vector1_caf1cd499dd84a4ea30e0af62586b819: 0.85
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - Color_d370ab5fd72b4bf0aad2c1c5e36fcf80: {r: 1, g: 1, b: 1, a: 0}
+    - Vector4_a72f40ef20e9454da6d718f4135afb83: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorMask: {r: 2.270603, g: 2.270603, b: 2.270603, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

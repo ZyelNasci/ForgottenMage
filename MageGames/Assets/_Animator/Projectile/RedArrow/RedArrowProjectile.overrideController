@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RedArrowProjectile
+  m_Controller: {fileID: 9100000, guid: 786919454875ae947884d33c537735ea, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 94a4f734c1ed26b4982e7d48ac013c79, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad6f62832fc7809449e3abc7015f4602, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0b66628d09ffc1744bbd8a4de7468435, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 607c4eb4eaa03454392432a8b831914a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7f8ce2959a55ba64a8caa453260bcf40, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7f8ce2959a55ba64a8caa453260bcf40, type: 2}

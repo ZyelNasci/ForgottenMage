@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409cf26de9b7c3640bd33c4d4ce24ecb, type: 3}
+  m_Name: ItemsSO
+  m_EditorClassIdentifier: 
+  projectiles:
+  - name: Leaf
+    projectileName: Leaf
+    projectilePrefab: {fileID: 598307312125797034, guid: 0d2224889706d184b98d578f230f2a6d, type: 3}
+    type: 1
+  - name: asdas
+    projectileName: Red Arrow
+    projectilePrefab: {fileID: 2526227915666043192, guid: f3f4e5d626afa434aa12ef9b7f0ae555, type: 3}
+    type: 2
+  - name: Turret
+    projectileName: Turret
+    projectilePrefab: {fileID: 2388207144464852565, guid: 8000c5ae170152a46bcb65f6a77e4079, type: 3}
+    type: 3
+  - name: Giant Red Arrow
+    projectileName: Giant Red Arrow
+    projectilePrefab: {fileID: -9194362247494971413, guid: bd8e8440ec1ae3e4eabdd93285217f1f, type: 3}
+    type: 4
+  - name: Bullet Circle Shot
+    projectileName: Bullet Circle Shot
+    projectilePrefab: {fileID: -3043825691950596932, guid: c5a5a9077f9a05842914fc26196e8211, type: 3}
+    type: 5
+  Gold:
+  - name: Gold Coin
+    Icon: {fileID: 482499827933125320, guid: 146b4a40935f03946a6ec8d1bd85570d, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 3571078062187476187, guid: 6e2ec97eec1c48e4aba9682d37333a15, type: 3}
+    itemType: 0
+    collectableType: 1
+  - name: Blue Coin
+    Icon: {fileID: -5803617559790530207, guid: 8468d740f0326ae4c8eb46acdc93a565, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 1654403400550551915, guid: 1c098d60937247148ac2c9f25b53f41d, type: 3}
+    itemType: 0
+    collectableType: 2
+  - name: Blood Stone
+    Icon: {fileID: 21300000, guid: ce9281b980626084e8722d31d970ab29, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 6966174605206267318, guid: c9d06b85fbac36a42948167cbb48c0a6, type: 3}
+    itemType: 0
+    collectableType: 26
+  staffs:
+  - name: Leaf Of Staff
+    Icon: {fileID: 21300000, guid: 558d72cff2e2e66408152c429842584e, type: 3}
+    agroupable: 0
+    collectablePrefab: {fileID: 6237287580961600673, guid: eccea9d17e1c78d40b4e9dc9b1d2e39c, type: 3}
+    itemType: 1
+    collectableType: 3
+    weapon: {fileID: 3691760155402905895, guid: c596ec94e83cf914c9b90ce2f9b41135, type: 3}
+  - name: Staff02
+    Icon: {fileID: 21300000, guid: c3c874f137354db408b6c20702da7c76, type: 3}
+    agroupable: 0
+    collectablePrefab: {fileID: 6667649653274198622, guid: 9b8ce3a155966554fa928cbcaf22725f, type: 3}
+    itemType: 1
+    collectableType: 4
+    weapon: {fileID: 7561824489668028845, guid: 4f0f1db32a9569648ad98dba0189a846, type: 3}
+  spellbooks:
+  - name: SpellBook
+    Icon: {fileID: 21300000, guid: 9e0fee24d5cd8664eb3762672ba9521b, type: 3}
+    agroupable: 0
+    collectablePrefab: {fileID: 3428592733136863067, guid: 1c10aaf7baa365b4a8c0572bb7fbc628, type: 3}
+    itemType: 2
+    collectableType: 5
+  rings:
+  - name: Ring 01
+    Icon: {fileID: 21300000, guid: 26a032345c3c0924e9fd4ead5977d1a5, type: 3}
+    agroupable: 0
+    collectablePrefab: {fileID: 9073941992028287900, guid: b0e1f98fb4e91184cbba6a2e99e7b1a1, type: 3}
+    itemType: 3
+    collectableType: 10
+  consumables:
+  - name: Small Health Potion
+    Icon: {fileID: 21300000, guid: 026acb5dbec65fe44a1716e8095f5477, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 1470237968171425696, guid: c754cf2e88199534ea1cdfbb26844faa, type: 3}
+    itemType: 4
+    collectableType: 18
+  - name: Medium Health Potion
+    Icon: {fileID: 21300000, guid: 857c1bedeb2cf7840a8fbcf95187f5b7, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 2081891164745540507, guid: 9f2978d63a995734487e9950c2092472, type: 3}
+    itemType: 4
+    collectableType: 19
+  - name: Big Health Potion
+    Icon: {fileID: 21300000, guid: 517178faaba7a294da0c034917718162, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 7480870598837855312, guid: 31f0a4a220706bd49b24c39e17f12884, type: 3}
+    itemType: 4
+    collectableType: 20
+  - name: Damage
+    Icon: {fileID: 21300000, guid: 4b938c2239e5b334b8dd8c8df9bf1632, type: 3}
+    agroupable: 1
+    collectablePrefab: {fileID: 786979817, guid: bd55ee65917dd03438cb392c9a9f2570, type: 3}
+    itemType: 4
+    collectableType: 21
+  keys:
+  - name: asd
+    Icon: {fileID: 0}
+    agroupable: 0
+    collectablePrefab: {fileID: 0}
+    itemType: 0
+    collectableType: 0
+  - name: asd
+    Icon: {fileID: 0}
+    agroupable: 0
+    collectablePrefab: {fileID: 0}
+    itemType: 0
+    collectableType: 0
+  - name: dsad
+    Icon: {fileID: 0}
+    agroupable: 0
+    collectablePrefab: {fileID: 0}
+    itemType: 0
+    collectableType: 0
+  - name: sadas
+    Icon: {fileID: 0}
+    agroupable: 0
+    collectablePrefab: {fileID: 0}
+    itemType: 0
+    collectableType: 0
+  - name: asdasd
+    Icon: {fileID: 0}
+    agroupable: 0
+    collectablePrefab: {fileID: 0}
+    itemType: 0
+    collectableType: 0
