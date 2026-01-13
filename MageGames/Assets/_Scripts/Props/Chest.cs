@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class Chest : MonoBehaviour
 {
-    [SerializeField] private Light2D light;
+    [SerializeField] private UnityEngine.Rendering.Universal.Light2D light;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private AnimationCurve curveSpawned;
     [SerializeField] private SpriteRenderer [] render;

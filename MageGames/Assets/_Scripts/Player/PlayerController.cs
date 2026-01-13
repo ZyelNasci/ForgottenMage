@@ -56,23 +56,20 @@ public class PlayerController : Singleton<PlayerController>, TakingDamage
     #region Unity Functions
     void Awake()
 	{
-        
+        if (Instance.gameObject == gameObject)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+
     void Start()
     {
         //components.cinemachineBrain = MainCamera.Instance.GetCamera.GetComponent<CinemachineBrain>(); //GetCamera.GetComponent<CinemachineBrain>();
-
-        if (Instance.gameObject == gameObject)
-		{
-            DontDestroyOnLoad(gameObject);
-		}
-		else
-		{
-            Destroy(gameObject);
-		}
-
-        components.weapon?.InitializeWeapon("Enemy", this);
-        
+        components.weapon?.InitializeWeapon("Enemy", this);        
 
         mana.Initalize();
         health.Initialize();
@@ -129,7 +126,9 @@ public class PlayerController : Singleton<PlayerController>, TakingDamage
 
     #region Input_Methods
     public void CheckControllerDevice(string _deviceName)
-    {
+    {        
+        if(_deviceName == null) return; 
+
         if (_deviceName.Contains("Xbox"))
         {
             if (!joystick)
@@ -356,7 +355,7 @@ public class PlayerController : Singleton<PlayerController>, TakingDamage
 		{            
             if(_damage != null && _damage.pushForce > 0)
 			{
-                components.body.velocity = _damage.velocity * _damage.pushForce;
+                components.body.linearVelocity = _damage.velocity * _damage.pushForce;
                 SwitchState(knockbackState);
             }
 		}

@@ -78,7 +78,7 @@ public class EnemyBase : MonoBehaviour, TakingDamage
     public virtual void ResetEnemy()
     {
         currentLife = life;
-        target = FindObjectOfType<PlayerController>().transform;
+        target = PlayerController.Instance.transform;
         //waveManager = null;
         InitializeState();
     }

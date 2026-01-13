@@ -55,9 +55,9 @@ public class BreakablePiece : MonoBehaviour
 	{
 		if (falling) return;
 
-		if(Mathf.Abs(body.velocity.x) < 0.3f && Mathf.Abs(body.velocity.y) < 0.3f)
+		if(Mathf.Abs(body.linearVelocity.x) < 0.3f && Mathf.Abs(body.linearVelocity.y) < 0.3f)
 		{
-			body.velocity = Vector2.zero;
+			body.linearVelocity = Vector2.zero;
 			falling = true;
 			visual.sortingOrder = -1;
 			visual.DOColor(new Color(.7f, .7f, .7f), 1).OnComplete(()=> { this.enabled = false; });

@@ -4,7 +4,7 @@ public class BaseEquipmentSlots : BaseSlotsGroup
 {
 	BaseIndividualSlots currentSlot;
 
-	[SerializeField]
+	//[SerializeField]
 	public bool HasStaffEquiped
 	{
 		get

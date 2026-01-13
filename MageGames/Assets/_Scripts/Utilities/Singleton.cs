@@ -11,12 +11,7 @@ public class Singleton<T> : MonoBehaviour where T: Component
         {
             if(_instance == null)
             {
-                _instance = FindObjectOfType<T>();
-                if(_instance == null)
-                {
-                    GameObject newGO = new GameObject();
-                    _instance = newGO.AddComponent<T>();
-                }
+                _instance = FindFirstObjectByType<T>();
             }
             return _instance;
         }

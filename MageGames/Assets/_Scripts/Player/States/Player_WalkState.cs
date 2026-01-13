@@ -70,6 +70,6 @@ public class Player_WalkState : Base_State
             return;
         }
 
-        components.body.velocity = inputMove * speed;
+        components.body.linearVelocity = inputMove * speed;
     }
 }

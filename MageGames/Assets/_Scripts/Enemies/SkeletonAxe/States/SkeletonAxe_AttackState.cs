@@ -99,7 +99,7 @@ public class SkeletonAxe_AttackState : EnemyBase_State
 		navmesh.isStopped = true;
 		navmesh.speed = regularVelocity;
 		navmesh.velocity = Vector3.zero;
-		skeleton.GetBody.velocity = Vector3.zero;
+		skeleton.GetBody.linearVelocity = Vector3.zero;
 		BowAiming();
 		yield return new WaitForSeconds(1);
 		SetShotAnimation(false);

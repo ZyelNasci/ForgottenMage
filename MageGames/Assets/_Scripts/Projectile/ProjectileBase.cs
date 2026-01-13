@@ -60,7 +60,7 @@ public class ProjectileBase : MonoBehaviour
         rot.z += originalRotation;
         transform.eulerAngles = rot;
 
-        body.velocity = temp;
+        body.linearVelocity = temp;
 
         LifeTime();
     }
@@ -128,12 +128,12 @@ public class ProjectileBase : MonoBehaviour
         {
             DamageAttributes dmg = new DamageAttributes();
             dmg.damageValue = damage;
-            dmg.velocity = body.velocity;
+            dmg.velocity = body.linearVelocity;
             dmg.position = transform.position;
             _component.TakeDamage(dmg);
         }
 
-        body.velocity = Vector2.zero;
+        body.linearVelocity = Vector2.zero;
         currentTime = Time.time;
         SetAnimator("collide", true);        
     }

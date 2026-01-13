@@ -73,7 +73,7 @@ public class SkeletonArcher : EnemyBase
 
 	public override void Dead(Vector2 _direction)
 	{
-		body.velocity = Vector2.zero;
+		body.linearVelocity = Vector2.zero;
 		nav.Move(Vector2.zero);
 		sortingGroup.sortingOrder = -1;
 

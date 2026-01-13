@@ -14,7 +14,7 @@ public class Player_KnockbackState : Base_State
 	public override void EnterState()
 	{
 		components.anim.SetBool("knockback", true);
-		float x = components.body.velocity.x;
+		float x = components.body.linearVelocity.x;
 		float sX = player.transform.localScale.x;
 		if(x > 0 && sX > 0 || x < 0 && sX < 0)
 		{
@@ -30,9 +30,9 @@ public class Player_KnockbackState : Base_State
 
 	public override void FixedUpdate()
 	{
-		components.body.velocity = Vector2.Lerp(components.body.velocity, Vector2.zero, 10 * Time.deltaTime);
+		components.body.linearVelocity = Vector2.Lerp(components.body.linearVelocity, Vector2.zero, 10 * Time.deltaTime);
 		float minVelocity = 1;
-		if(Mathf.Abs(components.body.velocity.x) < minVelocity && Mathf.Abs(components.body.velocity.y) < minVelocity)
+		if(Mathf.Abs(components.body.linearVelocity.x) < minVelocity && Mathf.Abs(components.body.linearVelocity.y) < minVelocity)
 		{
 			player.SwitchState(player.idleState);
 		}

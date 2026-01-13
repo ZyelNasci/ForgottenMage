@@ -15,7 +15,7 @@ public class Player_IdleState : Base_State
     }
     public override void EnterState()
     {
-        components.body.velocity = Vector2.zero;
+        components.body.linearVelocity = Vector2.zero;
         components.anim.SetBool("idle", true);
     }
     public override void ExitState()

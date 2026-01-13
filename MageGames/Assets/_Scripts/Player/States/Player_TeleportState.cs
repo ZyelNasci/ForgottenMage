@@ -17,7 +17,7 @@ public class Player_TeleportState : Base_State
     }
     public override void EnterState()
     {
-        components.body.velocity = Vector2.zero;
+        components.body.linearVelocity = Vector2.zero;
         components.teleportParticle.Play();
 
         player.StartCoroutine(TeleportDelay());
@@ -48,7 +48,7 @@ public class Player_TeleportState : Base_State
     {
 
         components.collider.enabled = false;
-        components.body.velocity = Vector2.zero;
+        components.body.linearVelocity = Vector2.zero;
         SetTeleportAnim();
         components.anim.SetBool("teleport", true);
         Vector3 direction = inputMove;

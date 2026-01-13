@@ -15,7 +15,7 @@ public class Player_InteractingState : Base_State
 	public override void EnterState()
 	{
 		currentTime = 0;
-		components.body.velocity = Vector2.zero;
+		components.body.linearVelocity = Vector2.zero;
 	}
 
 	public override void ExitState()
@@ -25,7 +25,7 @@ public class Player_InteractingState : Base_State
 
 	public override void FixedUpdate()
 	{
-		components.body.velocity = Vector2.zero;
+		components.body.linearVelocity = Vector2.zero;
 
 		switch (player.currentInteract.getInteractType)
 		{

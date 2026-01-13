@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class ResourceItem : CollectableBase
 {
     [Header("GoldCoin Component")]
     [SerializeField]
-    private Light2D light2D;
+    private UnityEngine.Rendering.Universal.Light2D light2D;
 	public override void ResetCollectable()
 	{
 		base.ResetCollectable();

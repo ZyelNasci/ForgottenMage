@@ -25,7 +25,7 @@ public class Player_FallState : Base_State
 
     IEnumerator Fall()
     {
-        components.body.velocity = Vector3.zero;
+        components.body.linearVelocity = Vector3.zero;
         //body.velocity = Vector3.up * -2.2f;
 
         components.collider.enabled = false;

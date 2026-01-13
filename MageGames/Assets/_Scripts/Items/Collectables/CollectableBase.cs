@@ -150,7 +150,7 @@ public class CollectableBase : MonoBehaviour
         if (PlayerController.Instance.components.inventory.CheckIsFull(GetInfo))
         {
             hasTarget = false;
-            body.velocity = Vector2.zero;
+            body.linearVelocity = Vector2.zero;
             visual?.DOKill();
             visual.transform.DOLocalMoveY(0, 0.3f).SetEase(Ease.OutSine);
             SetOrderLayer(false);
@@ -163,7 +163,7 @@ public class CollectableBase : MonoBehaviour
         direction.x *= speed * curveX.Evaluate(currentFixedTime);
         direction.y *= speed * curveY.Evaluate(currentFixedTime);        
 
-        body.velocity = direction;
+        body.linearVelocity = direction;
         if(Physics2D.OverlapCircle(transform.position, collideRadius, 1 << 3))
         {
             ItemCollected();
@@ -176,7 +176,7 @@ public class CollectableBase : MonoBehaviour
         visual?.DOKill();
         visual.transform.localPosition = Vector2.zero;
         shadowVisual.enabled = false;
-        body.velocity = Vector2.zero;
+        body.linearVelocity = Vector2.zero;
         anim.SetBool("Collected", true);
         collected = true;
         currentTime = Time.time;

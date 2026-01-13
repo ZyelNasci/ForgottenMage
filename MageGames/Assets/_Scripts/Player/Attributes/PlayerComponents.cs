@@ -39,8 +39,10 @@ public class PlayerComponents
     {
 		get
 		{
-            
-            if (cameraTransposer == null || cameraTransposer.gameObject != cinemachineBrain.ActiveVirtualCamera.VirtualCameraGameObject)
+
+            var brain = cinemachineBrain;
+            if (brain == null) return null;
+            if (cameraTransposer == null || cameraTransposer.gameObject != brain.ActiveVirtualCamera.VirtualCameraGameObject)
                 cameraTransposer = cinemachineBrain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineFramingTransposer>();
 
             return cameraTransposer;
